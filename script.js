@@ -1,3 +1,4 @@
+// for navigation bar styling on scroll
 const sections = document.querySelectorAll("section");
 
 const options = {
@@ -22,4 +23,17 @@ const observer = new IntersectionObserver(function (entries, observer) {
 
 sections.forEach(section => {
     observer.observe(section);
-})
+});
+
+// mobile menu
+$("i.fa-bars").on("click", function() {
+    $(".header-bottom_menu").css("display", "inline");
+    $("i.fa-bars").css("display", "none");
+    $("i.fa-times-circle").css("display", "inline");
+});
+
+$("i.fa-times-circle").on("click", function () {
+    $(".header-bottom_menu").css("display", "none");
+    $("i.fa-times-circle").css("display", "none");
+    $("i.fa-bars").css("display", "inline");
+});
