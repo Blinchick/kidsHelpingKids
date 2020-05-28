@@ -151,12 +151,12 @@ header {
 }
 
 .header-bottom_logo img{
-    width: 150px;
+    width: 100px;
 }
 
 /* for hover effect on bottom a */
 .header-bottom_menu a {
-    padding: 4.5rem 2rem;
+    padding: 3rem 1rem;
     /* border-bottom-left-radius: 10%; */
     /* border-bottom-right-radius: 10%; */
     transition: 0.4s linear;
