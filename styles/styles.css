@@ -146,6 +146,16 @@ header {
     padding: 1rem 2rem 1rem 0;
 }
 
+.header-top_contact a,
+.header-top_links a {
+    transition: .3s ease-in-out;
+}
+
+.header-top_contact a:hover,
+.header-top_links a:hover {
+    color: #6d3e95;
+}
+
 .header-bottom_logo {
     padding-right: 2rem;
 }
@@ -156,7 +166,8 @@ header {
 
 /* for hover effect on bottom a */
 .header-bottom_menu a {
-    padding: 3rem 1rem;
+    padding: 2.5rem 2rem;
+    text-shadow: 1px 1px #00000036;
     /* border-bottom-left-radius: 10%; */
     /* border-bottom-right-radius: 10%; */
     transition: 0.4s linear;
@@ -320,7 +331,11 @@ footer {
 
 .footer-copyrights a {
     color: white;
-    text-decoration: underline;
+    transition: .3s ease-in-out;
+}
+
+.footer-copyrights a:hover {
+    color: #6d3e95;
 }
 
 /* media */
