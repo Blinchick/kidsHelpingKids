@@ -3,7 +3,7 @@ const sections = document.querySelectorAll("section");
 const options = {
     root: null,
     threshold: 0,
-    rootMargin: "-270px"
+    rootMargin: "-400px"
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {
@@ -11,10 +11,11 @@ const observer = new IntersectionObserver(function (entries, observer) {
         const hash = '#' + entry.target.id;
         const nav = document.querySelector(`a[href="${hash}"]`);
         console.log(entry)
-        if (entry.isIntersecting) {
+        if (!entry.isIntersecting) {
+            nav.classList.remove('active')
+        } 
+        else {
             nav.classList.add('active');
-        } else {
-            nav.classList.remove('active');
         }
     });
 }, options);
