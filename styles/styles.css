@@ -47,7 +47,7 @@ h1, h2, h3 {
 }
 
 h1  {
-    font-size: 48px;
+    font-size: 60px;
     margin: 0;
     margin-bottom: 2rem;
 }
@@ -106,6 +106,13 @@ ul {
 
 /* header styles */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px #00000036;
+}
+
 .header-top_fill {
     background-color: #e54b44;
 }
@@ -126,8 +133,12 @@ ul {
     color: white;
 }
 
+.header-bottom_fill  {
+    background-color: white;
+}
+
 .header-bottom a {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
@@ -138,12 +149,12 @@ ul {
 }
 
 .header-top_contact li,
-.header-bottom_logo {
+.header-top_links li {
     padding: 1rem 2rem 1rem 0;
 }
 
-.header-top_links li{
-    padding: 1rem 2rem 1rem 0;
+.header-bottom_logo {
+    padding-right: 2rem;
 }
 
 .header-bottom_logo img{
@@ -152,9 +163,9 @@ ul {
 
 /* for hover effect on bottom a */
 .header-bottom_menu a {
-    padding: 5.5rem 2rem;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    padding: 4.5rem 2rem;
+    /* border-bottom-left-radius: 10%; */
+    /* border-bottom-right-radius: 10%; */
     transition: 0.4s linear;
 }
 
@@ -184,6 +195,23 @@ ul {
 
 .home span.blue {
     color: #3c7bbf;
+}
+
+/* about us styles */
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us span.red {
+    color: #e54b44;
+}
+
+.about-us img,
+.about-us_info {
+    max-width: 400px;
 }
 
 /* get involved styles */
