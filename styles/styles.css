@@ -68,6 +68,22 @@ ul {
     padding: 0;
 }
 
+.red {
+    color: #e54b44;
+}
+
+.blue {
+    color: #3c7bbf;
+}
+
+.violet {
+    color: #6d3e95
+}
+
+.green {
+    color: #91c94c;
+}
+
 .button {
     padding: 1rem;
     border: 2px #e54b44 solid;
@@ -208,14 +224,6 @@ header {
 
 .home::after {
     background-image: url(./assets/kids-banner.jpg);
-}
-
-.home span.green {
-    color: #91c94c;
-}
-
-.home span.blue {
-    color: #3c7bbf;
 }
 
 /* about us styles */
@@ -368,7 +376,7 @@ footer {
 
     .header-bottom_menu {
         position: absolute;
-        right: -40px;
+        right: -45px;
         top: 72px;
         background-color: rgb(255, 255, 255);
         box-shadow: 2px 2px #00000036;
@@ -380,7 +388,7 @@ footer {
     }
 
     .header-bottom_menu li {
-        padding: 1rem;
+        padding: 1rem 3rem 1rem 1rem;
         border-bottom: 2px solid #e54b44;
     }
 
