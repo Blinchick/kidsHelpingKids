@@ -121,10 +121,11 @@ header {
     top: 0;
     z-index: 1;
     box-shadow: 0 0 10px #00000036;
+    font-family: 'Nunito', cursive;
 }
 
 .header-top_fill {
-    background-color: #e54b44;
+    background-color: #3c7bbf;
 }
 
 .header-top,
@@ -170,7 +171,7 @@ header {
 
 .header-top_contact a:hover,
 .header-top_links a:hover {
-    color: #6d3e95;
+    color: #000;
 }
 
 .header-bottom_logo {
@@ -188,8 +189,9 @@ header {
     transition: 0.4s linear;
 }
 
-    a.active {
-        background-color: #e54b44;
+    .header-bottom_menu a.active, 
+    .header-bottom_menu a:hover {
+        background-color: #3c7bbf;
         color: white;
     }
 
