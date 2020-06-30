@@ -86,24 +86,26 @@ ul {
 
 .button {
     padding: 1rem;
-    border: 2px #e54b44 solid;
+    border: 2px #3c7bbf solid;
     border-radius: 20px;
     color: white;
-    background-color: #e54b44;
+    background-color: #3c7bbf;
     transition: .3s ease-in-out;
 }
 
 .button:hover {
     background-color: transparent;
-    color: black;
+    color: #3c7bbf;
 }
 
 /* for opacity */
 .contact-us::after,
-.home::after {
+.home::after,
+.get-involved::after {
     content: "";
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     opacity: 0.3;
     top: 0;
     left: 0;
@@ -150,7 +152,8 @@ header {
 
 .header-bottom a {
     font-size: 18px;
-    color: black;
+    color: #3c7bbf;
+    font-weight: bold;
 }
 
 .header-top_contact ul,
@@ -171,7 +174,7 @@ header {
 
 .header-top_contact a:hover,
 .header-top_links a:hover {
-    color: #000;
+    color: #daecf7;
 }
 
 .header-bottom_logo {
@@ -205,7 +208,7 @@ header {
 
     .header-bottom_mobile i {
         font-size: 30px;
-        color: #e54b44;
+        color: #3c7bbf;
         cursor: pointer;
     }
 
@@ -216,7 +219,8 @@ header {
 /* home section */
 
 .home {
-    height: 100vh;
+    height: 95vh;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -231,9 +235,11 @@ header {
 /* about us styles */
 
 .about-us {
+    padding: 10rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .about-us span.red {
@@ -242,18 +248,28 @@ header {
 
 .about-us img,
 .about-us_info {
-    max-width: 400px;
+    max-width: 450px;
+    border-radius: 5rem;
+    border: 4px solid #daecf7;
+}
+
+.about-us_info {
+    padding: 2rem;
 }
 
 /* get involved styles */
 .get-involved {
     padding: 10rem 0;
     text-align: center;
+    position: relative;
 }
 
-.get-involved_span,
+.get-involved::after {
+    background-image: url('./assets/get-involved.jpg');
+}
+
 .get-involved i {
-    color: #e54b44;
+    color: #3c7bbf;
 }
 
 .get-involved i {
@@ -344,7 +360,7 @@ header {
 /* footer styles */
 
 footer {
-    background-color: #e54b44;
+    background-color: #3c7bbf;
     text-align: center;
 }
 
@@ -361,7 +377,7 @@ footer {
 }
 
 .footer-copyrights a:hover {
-    color: #6d3e95;
+    color: #daecf7;
 }
 
 /* media */
