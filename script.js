@@ -11,7 +11,6 @@ const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
         const hash = '#' + entry.target.id;
         const nav = document.querySelector(`a[href="${hash}"]`);
-        console.log(entry)
         if (!entry.isIntersecting) {
             nav.classList.remove('active')
         } 
@@ -37,3 +36,13 @@ $("i.fa-times-circle").on("click", function () {
     $("i.fa-times-circle").css("display", "none");
     $("i.fa-bars").css("display", "inline");
 });
+
+//for a modal form
+
+$("a.button.open").on("click", function() {
+    $('#myModal').css("display", "block")
+})
+
+$("span.close").on("click", function() {
+    $('#myModal').css("display", "none")
+})

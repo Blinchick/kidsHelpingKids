@@ -149,18 +149,75 @@
                 <div class="get-involved_options">
                     <div>
                         <i class="fas fa-hands-helping"></i>
-                        <h3>VOLUNTEER</h3>
-                        <p>We are so excited you want to join us! Just fill in this short form below, and we will get
-                            back to you very soon.
-                        </p>
-                        <a class="button" href="#">Apply Now</a>
+                        <h3>Become a volunteer</h3>
+                        <a class="button open" href="#">Apply Now</a>
                     </div>
+
+                    <div>
+                        <i class="fas fa-heart"></i>
+                        <h3>Donate</h3>
+                        <a class="button"
+                            href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d91746">Start Today</a>
+                    </div>
+                </div>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <p>We are so excited you want to join us! Please fill in the form below and we will be in touch
+                            very soon. </p>
+                        <span class="close">&times;</span>
+                        <form action="" class="form-volunteer">
+                            <fieldset>
+                                <legend>
+                                    Tell us about yourself
+                                </legend>
+                                <label for="firstName" class="sr-only">First Name</label>
+                                <input type="text" placeholder="First Name">
+
+                                <label for="lastName" class="sr-only">Last Name</label>
+                                <input type="text" placeholder="Last Name">
+
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="text" placeholder="Email">
+
+                                <label for="province">Your province</label>
+                                <select id="province" name="province">
+                                    <option value disabled>Where do you live?</option>
+                                    <option value="NL">NL</option>
+                                    <option value="PE">PE</option>
+                                    <option value="NS">NS</option>
+                                    <option value="NB">NB</option>
+                                    <option value="QC">QC</option>
+                                    <option value="ON">ON</option>
+                                    <option value="MB">MB</option>
+                                    <option value="SK">SK</option>
+                                    <option value="AB">AB</option>
+                                    <option value="BC">BC</option>
+                                    <option value="YT">YT</option>
+                                    <option value="NT">NT</option>
+                                    <option value="NU">NU</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Pick the position you are interested in</legend>
+                                <input type="radio" name="position" value="leader" id="leader">
+                                <label for="leader">I want to be the provincial team leader</label>
+                                <input type="radio" name="position" value="member" id="member">
+                                <label for="member">I want to be in the provincial team</label>
+                            </fieldset>
+
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="contact-us" id="contact-us">
-            <h2>GET IN <span class="contact-us_span">TOUCH</span></h2>
+            <h2>GET IN <span class="blue">TOUCH</span></h2>
 
             <div class="contact-us_contacts">
                 <ul>
@@ -168,7 +225,7 @@
                         <a href="tel:1(647)113-3333">
                             <i class="fas fa-phone"></i>
                             </br>
-                            <p>+1 (647) 123 - 9002</p>
+                            <p>+1 (647) 916 - 5620</p>
                         </a>
                     </li>
                     <li>
@@ -181,10 +238,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:mail@mail.com">
+                        <a href="mailto:info@kidshelpingkids.ca">
                             <i class="fas fa-envelope"></i>
                             </br>
-                            <p>mail@mail.com</p>
+                            <p>info@kidshelpingkids.ca</p>
                         </a>
                     </li>
                 </ul>

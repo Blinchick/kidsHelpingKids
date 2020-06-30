@@ -51,6 +51,7 @@ h2 {
 
 h3 {
     font-size: 20px;
+    margin: 2rem 0 3rem;
 }
 
 a {
@@ -270,9 +271,6 @@ header {
 
 .get-involved i {
     color: #3c7bbf;
-}
-
-.get-involved i {
     font-size: 30px;
 }
 
@@ -281,10 +279,59 @@ header {
     justify-content: space-around;
 }
 
-.get-involved_options div {
+.get-involved_options > div {
+    padding: 3rem;
+    border: 2px solid #daecf7;
+    background-color: rgba(218, 236, 247, 0.3);
+    border-radius: 5rem;
     max-width: 350px;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #daecf7
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #3c7bbf;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #daecf7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-volunteer legend {
+    font-size: 20px;
+}
+
+.form-volunteer input[type="text"]{
+    width: 200px;
+    padding: 1rem;
+    font-size: 18px;
+    color: #3c7bbf;
+    border: none;
+    border-radius: 1rem;
+}
 
 /* contact section styles */
 
@@ -293,10 +340,6 @@ header {
     position: relative;
     padding: 5rem;
     
-}
-
-.contact-us_span {
-    color: #e54b44;
 }
 
 /* for opacity */
@@ -316,7 +359,7 @@ header {
 }
 
 .contact-us_contacts i {
-    color: #e54b44;
+    color: #3c7bbf;
     font-size: 20px;
 
 }
@@ -339,8 +382,8 @@ header {
     max-width: 500px;
     padding: 13px;
     margin: 10px 0;
-    border:2px solid rgba(229, 75, 68, 0.4);
-    color: #e54b44;
+    border:2px solid #3c7bbf;
+    color: #3c7bbf;
     font-size: 18px;
 }
 
@@ -399,6 +442,8 @@ footer {
         background-color: rgb(255, 255, 255);
         box-shadow: 2px 2px #00000036;
         display: none;
+        width: 120%;
+        text-align: center;
     }
     
     .header-bottom_menu ul{
@@ -407,11 +452,16 @@ footer {
 
     .header-bottom_menu li {
         padding: 1rem 3rem 1rem 1rem;
-        border-bottom: 2px solid #e54b44;
+        border-bottom: 2px solid #3c7bbf;
     }
 
     .header-bottom_menu a {
         padding: 0;
+    }
+
+    .header-bottom_menu a:hover {
+        color: #3c7bbf;
+        background-color: transparent;
     }
 
     .header-bottom_mobile {
@@ -420,7 +470,15 @@ footer {
 
     a.active {
         background-color: transparent;
-        color: #e54b44;
+        color: #3c7bbf;
         font-weight: bolder;
+    }
+
+    .about-us {
+        flex-wrap: wrap;
+    }
+
+    .about-us_info {
+        margin-top: 1rem;
     }
 }
