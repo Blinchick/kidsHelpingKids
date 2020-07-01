@@ -83,16 +83,20 @@ legend, label {
     font-size: 20px;
 }
 
-input, select {
+input[type=text], 
+select {
     height: 48px;
 }
 
-input, textarea, select {
+input[type=text],
+textarea, 
+select {
     padding: 13px;
     margin: 10px 0;
     border:2px solid #3c7bbf;
     font-size: 18px;
     color: #3c7bbf;
+    width: 100%;
 }
 
 option {
@@ -307,6 +311,7 @@ header {
 .get-involved_options {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .get-involved_options > div {
@@ -315,6 +320,7 @@ header {
     background-color: rgba(218, 236, 247, 0.3);
     border-radius: 5rem;
     max-width: 350px;
+    margin-top: 2rem;
 }
 
 /* The Modal (background) */
@@ -353,6 +359,25 @@ header {
     cursor: pointer;
 }
 
+/* volunteer form */
+
+.volunteer-form fieldset{
+    border:none;
+    text-align:left;
+}
+
+.volunteer-form .address select{
+    -moz-appearance: none;
+	-webkit-appearance: none;
+    appearance: none;
+    float: left;
+    color:#3c7bbf;
+    position: relative;
+    background-image: url(assets/br-down.png);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
 /* contact section styles */
 
 .contact-us {
@@ -360,12 +385,6 @@ header {
     position: relative;
     padding: 5rem;
     
-}
-
-/* for opacity */
-.contact-us::after {
-    background-repeat: no-repeat;
-    background: url(./assets/mapSample.png);
 }
 
 .contact-us_contacts ul{
@@ -388,12 +407,6 @@ header {
     padding: 2rem 0;
     color: black;
     font-size: 20px;
-}
-
-.contact-us form input,
-.contact-us form textarea {
-    width: 500px;
-    max-width: 500px;
 }
 
 .contact-us button {
@@ -422,32 +435,6 @@ footer {
 
 .footer-copyrights a:hover {
     color: #daecf7;
-}
-
-/* volunteer form */
-.volunteer-form input[type=text],
-.volunteer-form input[type=email], 
-.volunteer-form select,
-.volunteer-form textarea
-{
-    width: 100%;
-}
-
-.volunteer-form fieldset{
-    border:none;
-    text-align:left;
-}
-
-.volunteer-form .address select{
-    -moz-appearance: none;
-	-webkit-appearance: none;
-    appearance: none;
-    float: left;
-    color:#3c7bbf;
-    position: relative;
-    background-image: url(assets/br-down.png);
-    background-repeat: no-repeat;
-    background-position: 98% center;
 }
 
 /* media */
