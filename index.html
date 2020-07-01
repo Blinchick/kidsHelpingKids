@@ -150,12 +150,14 @@
                     <div>
                         <i class="fas fa-hands-helping"></i>
                         <h3>Become a volunteer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cupiditate?</p>
                         <a class="button open" href="#">Apply Now</a>
                     </div>
 
                     <div>
                         <i class="fas fa-heart"></i>
                         <h3>Donate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, pariatur.</p>
                         <a class="button"
                             href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d91746">Start Today</a>
                     </div>
@@ -166,26 +168,29 @@
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <p>We are so excited you want to join us! Please fill in the form below and we will be in touch
-                            very soon. </p>
                         <span class="close">&times;</span>
-                        <form action="" class="form-volunteer">
+                        <h3>We are so excited you want to join us! Please fill in the form below and we will be in touch
+                            very soon. </h3>
+                        <form action="" class="volunteer-form">
                             <fieldset>
                                 <legend>
                                     Tell us about yourself
                                 </legend>
                                 <label for="firstName" class="sr-only">First Name</label>
-                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="First Name" name="firstName" id="firstName">
 
                                 <label for="lastName" class="sr-only">Last Name</label>
-                                <input type="text" placeholder="Last Name">
+                                <input type="text" placeholder="Last Name" name="lastName" id="lastName">
 
                                 <label for="email" class="sr-only">Email</label>
                                 <input type="text" placeholder="Email">
+                            </fieldset>
 
-                                <label for="province">Your province</label>
+                            <fieldset class="address">
+                                <legend>Where do you live?</legend>
+                                <label for="province" class="sr-only">Province</label>
                                 <select id="province" name="province">
-                                    <option value disabled>Where do you live?</option>
+                                    <option value selected>Province</option>
                                     <option value="NL">NL</option>
                                     <option value="PE">PE</option>
                                     <option value="NS">NS</option>
@@ -200,15 +205,32 @@
                                     <option value="NT">NT</option>
                                     <option value="NU">NU</option>
                                 </select>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Pick the position you are interested in</legend>
-                                <input type="radio" name="position" value="leader" id="leader">
-                                <label for="leader">I want to be the provincial team leader</label>
-                                <input type="radio" name="position" value="member" id="member">
-                                <label for="member">I want to be in the provincial team</label>
+
+                                <label for="city" class="sr-only">City</label>
+                                <input type="text" placeholder="City" name="city" id="city">
                             </fieldset>
 
+                            <fieldset>
+                                <legend>I want to be a</legend>
+                                <input type="radio" name="position" value="leader" id="leader">
+                                <label for="leader">Provincial Team Leader</label>
+                                <input type="radio" name="position" value="member" id="member">
+                                <label for="member">Team Member</label>
+                            </fieldset>
+
+                            <fieldset>
+
+                                <label for="questionOne">Why do you want to join us?</label>
+                                <textarea name="questionOne" id="questionOne" cols="30" rows="10"></textarea>
+
+                                <label for="questionTwo">What issues are important to you?</label>
+                                <textarea name="questionTwo" id="questionTwo" cols="30" rows="10"></textarea>
+
+                                <label for="questionThree">What ideas do you have to raise money?</label>
+                                <textarea name="questionThree" id="questionThree" cols="30" rows="10"></textarea>
+                            </fieldset>
+
+                            <button type="Submit" class="button">SUBMIT</button>
                         </form>
                     </div>
 
@@ -218,35 +240,8 @@
 
         <section class="contact-us" id="contact-us">
             <h2>GET IN <span class="blue">TOUCH</span></h2>
-
-            <div class="contact-us_contacts">
-                <ul>
-                    <li>
-                        <a href="tel:1(647)113-3333">
-                            <i class="fas fa-phone"></i>
-                            </br>
-                            <p>+1 (647) 916 - 5620</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.google.com/maps/search/?api=1&query=Toronto&query_place_id=ChIJpTvG15DL1IkRd8S0KlBVNTI">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>PO Box 67834<br>
-                                Toronto, ON <br>
-                                Canada</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@kidshelpingkids.ca">
-                            <i class="fas fa-envelope"></i>
-                            </br>
-                            <p>info@kidshelpingkids.ca</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas facere amet voluptatibus. Cum
+                voluptatum error ipsam enim doloribus pariatur?</p>
             <form class="contact-us_form" action="">
                 <label for="name" class="sr-only">Your name</label>
                 <input type="text" name="name" id="name" placeholder="Your Name">

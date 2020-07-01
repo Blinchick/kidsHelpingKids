@@ -69,6 +69,36 @@ ul {
     padding: 0;
 }
 
+form {
+    display: inline-block;
+    text-align: center;
+    max-width: 500px;
+}
+
+textarea {
+    resize: none;
+}
+
+legend, label {
+    font-size: 20px;
+}
+
+input, select {
+    height: 48px;
+}
+
+input, textarea, select {
+    padding: 13px;
+    margin: 10px 0;
+    border:2px solid #3c7bbf;
+    font-size: 18px;
+    color: #3c7bbf;
+}
+
+option {
+    color: #3c7bbf;
+}
+
 .red {
     color: #e54b44;
 }
@@ -289,48 +319,38 @@ header {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #daecf7
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white
 }
 
 /* Modal Content */
 .modal-content {
-  padding: 20px;
+    padding: 20px;
+    position: relative;
 }
 
 /* The Close Button */
 .close {
-  color: #3c7bbf;
-  float: right;
-  font-size: 50px;
-  font-weight: bold;
+    color: #3c7bbf;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 3%;
 }
 
 .close:hover,
 .close:focus {
-  color: #daecf7;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.form-volunteer legend {
-    font-size: 20px;
-}
-
-.form-volunteer input[type="text"]{
-    width: 200px;
-    padding: 1rem;
-    font-size: 18px;
-    color: #3c7bbf;
-    border: none;
-    border-radius: 1rem;
+    color: #daecf7;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* contact section styles */
@@ -370,29 +390,10 @@ header {
     font-size: 20px;
 }
 
-.contact-us form {
-    display: inline-block;
-    text-align: center;
-    max-width: 500px;
-}
-
 .contact-us form input,
 .contact-us form textarea {
     width: 500px;
     max-width: 500px;
-    padding: 13px;
-    margin: 10px 0;
-    border:2px solid #3c7bbf;
-    color: #3c7bbf;
-    font-size: 18px;
-}
-
-.contact-us form input {
-    height: 48px;
-}
-
-.contact-us form textarea {
-    resize: none;
 }
 
 .contact-us button {
@@ -421,6 +422,32 @@ footer {
 
 .footer-copyrights a:hover {
     color: #daecf7;
+}
+
+/* volunteer form */
+.volunteer-form input[type=text],
+.volunteer-form input[type=email], 
+.volunteer-form select,
+.volunteer-form textarea
+{
+    width: 100%;
+}
+
+.volunteer-form fieldset{
+    border:none;
+    text-align:left;
+}
+
+.volunteer-form .address select{
+    -moz-appearance: none;
+	-webkit-appearance: none;
+    appearance: none;
+    float: left;
+    color:#3c7bbf;
+    position: relative;
+    background-image: url(assets/br-down.png);
+    background-repeat: no-repeat;
+    background-position: 98% center;
 }
 
 /* media */
